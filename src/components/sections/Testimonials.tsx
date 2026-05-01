@@ -5,25 +5,25 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "James Wilson",
-    role: "CEO at NexaTech",
-    content: "WEBRANIX transformed our banking platform into a modern masterpiece. Their technical prowess is unmatched in the industry.",
+    name: "Sai Kiran Reddy",
+    role: "Founder at PixelShade",
+    content: "WEBRANIX completely transformed our platform into a modern, scalable system. Their technical expertise and execution are outstanding.",
     rating: 5,
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200"
+    avatar: "/images/testimonial1.png"
   },
   {
-    name: "Elena Rodriguez",
-    role: "Marketing Director at LuxStore",
-    content: "The ROI we've seen since launching our new marketplace is incredible. They delivered the best output at an unbeatable cost.",
+    name: "Sravani Lakshmi",
+    role: "Founder of Shreya Dental",
+    content: "After launching our new e-commerce platform, our conversions increased significantly. Best quality work at a very competitive price.",
     rating: 5,
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200&h=200"
+    avatar: "/images/testimonial2.png"
   },
   {
-    name: "David Park",
-    role: "Founder of Lumina Health",
-    content: "Working with the WEBRANIX team felt like having a true partner. They understood our mission and built a portal that our patients love.",
+    name: "Venkatesh Naidu",
+    role: "Founder of Srih Skin Clinic",
+    content: "The WEBRANIX team truly understood our vision and delivered beyond expectations. Our users love the experience now.",
     rating: 5,
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200&h=200"
+    avatar: "/images/testimonial3.png"
   }
 ];
 

@@ -48,7 +48,7 @@ const services = [
   {
     title: "Mobile App Development",
     description: "Cross-platform mobile applications built for performance and seamless user experience across Android and iOS devices.",
-    priceHint: "Starting from ₹40,000",
+    priceHint: "Starting from ₹10,000",
     features: [
       "Android & iOS Apps",
       "Real-time Sync",
@@ -139,7 +139,7 @@ export default function FullServices() {
                 </ul>
               </div>
               <Link 
-                href="/about" 
+                href="/about#contact" 
                 className="inline-flex items-center gap-2 font-bold text-primary group-hover:gap-3 transition-all"
               >
                 Inquire about this service <ArrowRight size={20} />
@@ -153,7 +153,7 @@ export default function FullServices() {
           <p className="text-slate-400 mb-10 max-w-xl mx-auto text-lg">
             Join 50+ companies that have transformed their digital presence with WEBRANIX.
           </p>
-          <Link href="/about" className="bg-primary text-white px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform inline-block">
+          <Link href="/about#contact" className="bg-primary text-white px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform inline-block">
             Start Your Project
           </Link>
         </div>

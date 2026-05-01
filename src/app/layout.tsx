@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
+import { Toaster } from "sonner";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col font-inter" suppressHydrationWarning>
         {children}
         <WhatsAppButton />
+        <Toaster position="top-center" richColors />
       </body>
     </html>
   );

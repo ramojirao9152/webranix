@@ -16,9 +16,9 @@ export default function CTA() {
     if (sectionRef.current) {
       // Reveal content
       gsap.fromTo(contentRef.current?.children || [],
-        { 
-          opacity: 0, 
-          y: 40 
+        {
+          opacity: 0,
+          y: 40
         },
         {
           opacity: 1,
@@ -52,26 +52,26 @@ export default function CTA() {
 
   return (
     <section ref={sectionRef} className="py-12 bg-slate-900 text-white relative overflow-hidden">
-      
+
       {/* Animated Background Blur */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full pointer-events-none">
-        <div 
+        <div
           ref={blurRef}
           className="absolute top-0 left-0 w-full h-full bg-primary/20 blur-[150px]"
         />
       </div>
-      
+
       <div ref={contentRef} className="max-w-7xl mx-auto px-8 relative z-10 text-center">
         <h2 className="text-[52px] leading-[1.1] tracking-[-0.04em] font-[800] mb-8">
           Ready to ignite your digital presence?
         </h2>
-        
+
         <p className="text-[18px] leading-[1.6] tracking-[-0.01em] font-[400] text-slate-400 max-w-2xl mx-auto mb-12">
           Our team of specialists is ready to help you navigate the future of digital products. Let's build something exceptional together.
         </p>
-        
+
         <div className="flex justify-center gap-6">
-          <Link href="mailto:hello@webranix.com">
+          <Link href="/about#contact">
             <button className="bg-primary text-white px-10 py-5 rounded-full font-semibold text-[16px] orange-bloom transition-all hover:scale-105 active:scale-95">
               Schedule a Strategy Call
             </button>

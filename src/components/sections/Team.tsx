@@ -9,7 +9,7 @@ const team = [
   {
     name: "Our Founder",
     role: "Founder & Strategic Lead",
-    image: "https://media.licdn.com/dms/image/v2/D4D03AQE7jhPRBUYKrQ/profile-displayphoto-scale_400_400/B4DZwDkHSpGUAg-/0/1769586326600?e=1778716800&v=beta&t=Oc0bGr9AJlpck5XL_vVKdLi1aqjfJ0yQErp8QyoQ1v4",
+    image: "/images/webranix_founder.jpeg",
     bio: "Driving the strategic vision of WEBRANIX, bridging the gap between technical mastery and artistic excellence to deliver category-defining digital products."
   }
 ];

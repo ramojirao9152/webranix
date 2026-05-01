@@ -9,25 +9,33 @@ import Link from "next/link";
 
 const services = [
   {
-    title: "Personal Portfolios",
-    description: "Tailored digital identities for professionals and creatives that capture attention and build authority.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCjFPnjidWgR00NBy_38swkdueBFLraUHLUw5uO_q9uAZ-4Fir-4wrZotkHdMek2MQePb094fesPtRxq-DrNQM9C8RUHC0iBYsJWtD6E239TYDPNkif6Yow0NYicUdD_G5zfNAvxZnVddCndj9h0hNsJVpcbKyDeUKX5EQrpkAgzXiQsWm6hx9He3rBIcVMWhMc2ODdPKWJL7SP_Fw6d02elgmAiCSKJnL8CSV0VjiebCwamQ8_H4M3KS9u4V6DGI0tiUSbNautVSo",
+    title: "Portfolio & Business Websites",
+    description:
+      "Professional websites that combine personal branding and business presence—crafted to build authority, trust, and generate leads.",
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuC6XLX5e4oVewcksvveJtNvOdBJ0WFo-f1y6Q3RuwY0PI114DA2XPKxiC6Q-uE1sOStwme8PETMScEqQc7jwTuGL1Um9YKS9THpwTCiCRboGql5tRapf34d1FCfIOWMtIw9i50xZgVYKdHX2o6ICFocD3BDM_6BH5w97fxiFBLSqYrp0nYJ94Sp07hFByKOKCTAn6LkmZmEU8-delHOq4r8lOPxU4IoDjbYYEeKNzK0p-XoBl5K98k7ik1BSKJSXjqSbORDNTMrqQc",
   },
   {
     title: "E-commerce Sites",
-    description: "High-performance online stores built for scale and conversion to drive your digital revenue.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDa6UQ5tBs9E2GvuYY09EQwF1_XQMi8Ubrutjo0ZJjRzAkuHUzcJhd9faJnwSqdfiQI3Qfhd5GISQJjPfnp3nRpHP5kuxM3OXe3B8WoM0zZokWqqUngGtmc8Oyy83gPFSflKu_O4cqUFFJ52ejgXI7cqpuXB1jRfWaL0p-_zDq3yEWwxEhQjVkGs_e6QHF248-0GhPy31x-a8CsyRPbukiIlLpidWHnlJkDPyXgIEaGBtes2_osa1HIOskXt9b_WsKeQvxOFxy7q1A",
+    description:
+      "High-performance online stores built for scale and conversion to drive your digital revenue.",
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuDa6UQ5tBs9E2GvuYY09EQwF1_XQMi8Ubrutjo0ZJjRzAkuHUzcJhd9faJnwSqdfiQI3Qfhd5GISQJjPfnp3nRpHP5kuxM3OXe3B8WoM0zZokWqqUngGtmc8Oyy83gPFSflKu_O4cqUFFJ52ejgXI7cqpuXB1jRfWaL0p-_zDq3yEWwxEhQjVkGs_e6QHF248-0GhPy31x-a8CsyRPbukiIlLpidWHnlJkDPyXgIEaGBtes2_osa1HIOskXt9b_WsKeQvxOFxy7q1A",
   },
   {
-    title: "Business Websites",
-    description: "Corporate platforms designed to establish trust and generate leads through strategic design.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuC6XLX5e4oVewcksvveJtNvOdBJ0WFo-f1y6Q3RuwY0PI114DA2XPKxiC6Q-uE1sOStwme8PETMScEqQc7jwTuGL1Um9YKS9THpwTCiCRboGql5tRapf34d1FCfIOWMtIw9i50xZgVYKdHX2o6ICFocD3BDM_6BH5w97fxiFBLSqYrp0nYJ94Sp07hFByKOKCTAn6LkmZmEU8-delHOq4r8lOPxU4IoDjbYYEeKNzK0p-XoBl5K98k7ik1BSKJSXjqSbORDNTMrqQc",
+    title: "App Development",
+    description:
+      "Scalable and high-performance mobile and web applications built with modern technologies for seamless user experiences.",
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCjFPnjidWgR00NBy_38swkdueBFLraUHLUw5uO_q9uAZ-4Fir-4wrZotkHdMek2MQePb094fesPtRxq-DrNQM9C8RUHC0iBYsJWtD6E239TYDPNkif6Yow0NYicUdD_G5zfNAvxZnVddCndj9h0hNsJVpcbKyDeUKX5EQrpkAgzXiQsWm6hx9He3rBIcVMWhMc2ODdPKWJL7SP_Fw6d02elgmAiCSKJnL8CSV0VjiebCwamQ8_H4M3KS9u4V6DGI0tiUSbNautVSo",
   },
   {
     title: "Wedding Invitation Websites",
-    description: "Elegant, interactive digital invitations with cinematic charm to celebrate your special day.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuD2grV3HSTkDbqLAPPZPXzo-9rxvPkpr9qGafn2eIShBmkJcmimDPUTutYXXUgykEFfb_Ylmmlpak9EvmfEmBXl_F-TCMzvW3e1qqX73sdTvggxKFn61_5ca40LS4yZPTcs5tUuehaQ0kHTHvdwPkR5Po-vqF0V5PeCcstwVyfM0Xka63usJdhd049fhjmqYKKBWGCOZMseuyFPw-UT-lqVYpmfP5O1D9kVOYyBkgrxHc4ixU4FRMV7kAW0pnQ3H4j8-i9kQYy1Ksw",
-  }
+    description:
+      "Elegant, interactive digital invitations with cinematic charm to celebrate your special day.",
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuD2grV3HSTkDbqLAPPZPXzo-9rxvPkpr9qGafn2eIShBmkJcmimDPUTutYXXUgykEFfb_Ylmmlpak9EvmfEmBXl_F-TCMzvW3e1qqX73sdTvggxKFn61_5ca40LS4yZPTcs5tUuehaQ0kHTHvdwPkR5Po-vqF0V5PeCcstwVyfM0Xka63usJdhd049fhjmqYKKBWGCOZMseuyFPw-UT-lqVYpmfP5O1D9kVOYyBkgrxHc4ixU4FRMV7kAW0pnQ3H4j8-i9kQYy1Ksw",
+  },
 ];
 
 export default function Services() {

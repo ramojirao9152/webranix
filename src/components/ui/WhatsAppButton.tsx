@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 
 export default function WhatsAppButton() {
-  const phoneNumber = "+919000000000"; // Placeholder number
+  const phoneNumber = "+919550073982"; // Placeholder number
   const message = "Hi WEBRANIX! I'd like to start a project.";
   const whatsappUrl = `https://wa.me/${phoneNumber.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(message)}`;
 
