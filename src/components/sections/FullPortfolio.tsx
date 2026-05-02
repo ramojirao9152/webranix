@@ -6,6 +6,14 @@ import { ExternalLink, ArrowRight } from "lucide-react";
 import { useState } from "react";
 
 const projects = [
+    {
+    title: "WheelCrafts",
+    category: "Ecommerce",
+    image: "https://cdn.shopify.com/s/files/1/0591/1176/8115/files/teak-wood-bullock-cart-home-decor-wheel-crafts_1.jpg?v=1777112107",
+    description: "Explore exquisite handcrafted bullock carts and vintage-inspired teapoy tables, blending tradition with elegance.",
+    journey: "We built a premium e-commerce experience for WheelCrafts to showcase their handcrafted teak wood products, focusing on high-quality product imagery and a seamless purchasing flow.",
+    liveUrl: "https://wheelcrafts.in/"
+  },
   {
     title: "Pixel Shade",
     category: "Design Agency",
@@ -30,14 +38,7 @@ const projects = [
     journey: "We showcased over 25 years of expertise for Srih Skin Clinic, using a professional theme of deep blues and vibrant orange accents to highlight their advanced technological approach.",
     liveUrl: "https://srih-skin-clinic.vercel.app/"
   },
-  {
-    title: "Ramoji Rao",
-    category: "Engineering Portfolio",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1200&h=800",
-    description: "A sleek, technical portfolio showcasing software engineering expertise and clean code.",
-    journey: "Built for performance and scalability, this minimalist portfolio features interactive skill sets and a typography-focused layout designed for maximum technical impact.",
-    liveUrl: "https://ramojirao.in/"
-  }
+
 ];
 
 export default function FullPortfolio() {

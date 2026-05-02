@@ -106,7 +106,8 @@ export default function ContactForm() {
 
               <div className="space-y-2">
                 <label className="text-sm font-bold text-slate-700">Project Type</label>
-                <select name="project_type" className="w-full px-6 py-4 rounded-2xl border border-slate-200 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all appearance-none bg-white">
+                <select name="project_type" defaultValue="" className="w-full px-6 py-4 rounded-2xl border border-slate-200 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all bg-white text-slate-700 font-medium cursor-pointer shadow-sm hover:border-slate-300">
+                  <option value="" disabled>Select Project Type</option>
                   <option>Web Development</option>
                   <option>Mobile App</option>
                   <option>UI/UX Design</option>

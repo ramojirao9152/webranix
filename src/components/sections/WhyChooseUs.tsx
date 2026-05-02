@@ -3,37 +3,37 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { MonitorSmartphone, Banknote, ShieldCheck, PencilRuler } from "lucide-react";
+import { MonitorSmartphone, Banknote, ShieldCheck, PencilRuler, Zap } from "lucide-react";
 import RadialOrbitalTimeline from "@/components/ui/radial-orbital-timeline";
 
 const features = [
   {
     id: 1,
-    title: "Platform Mastery",
-    date: "TECHNICAL ELITE",
-    content: "We build high-performance digital experiences using custom code (React/Next.js) as well as WordPress and Shopify.",
+    title: "Scalable Solutions",
+    date: "TECHNICAL EXCELLENCE",
+    content: "We build high-performance digital products using React, Next.js, WordPress, and Shopify — engineered for speed, scalability, and long-term growth.",
     category: "Technical",
     icon: MonitorSmartphone,
-    relatedIds: [4],
+    relatedIds: [4, 5],
     status: "completed" as const,
     energy: 100,
   },
   {
     id: 2,
-    title: "Unmatched ROI",
-    date: "MARKET ADVANTAGE",
-    content: "Premium, high-fidelity output at the most competitive price point, maximizing your return on investment.",
+    title: "Best Value",
+    date: "COST EFFICIENCY",
+    content: "Delivering premium-quality design and development at competitive pricing, ensuring maximum ROI without compromising performance.",
     category: "Financial",
     icon: Banknote,
-    relatedIds: [1],
+    relatedIds: [1, 5],
     status: "completed" as const,
     energy: 95,
   },
   {
     id: 3,
-    title: "Endless Support",
-    date: "MISSION CRITICAL",
-    content: "24/7 post-deployment maintenance ensuring your digital asset remains secure and high-performing globally.",
+    title: "24/7 Support",
+    date: "RELIABILITY",
+    content: "Continuous support and maintenance to keep your website secure, updated, and performing at its best — anytime you need it.",
     category: "Support",
     icon: ShieldCheck,
     relatedIds: [1, 4],
@@ -42,14 +42,25 @@ const features = [
   },
   {
     id: 4,
-    title: "Elite Craftsmanship",
-    date: "DESIGN PRECISION",
-    content: "Creative intuition blended with technical rigour to build products that are beautiful, scalable, and conversion-optimized.",
+    title: "Responsive Designs",
+    date: "UX PRECISION",
+    content: "Pixel-perfect, mobile-first designs that combine aesthetics with usability to maximize engagement and conversions.",
     category: "Design",
     icon: PencilRuler,
     relatedIds: [1, 2],
     status: "completed" as const,
     energy: 100,
+  },
+  {
+    id: 5,
+    title: "Fast Delivery",
+    date: "EXECUTION SPEED",
+    content: "Streamlined workflows and efficient development practices ensure faster project delivery without sacrificing quality.",
+    category: "Process",
+    icon: Zap,
+    relatedIds: [1, 2],
+    status: "completed" as const,
+    energy: 92,
   }
 ];
 
@@ -89,7 +100,7 @@ export default function WhyChooseUs() {
         <div ref={headerRef} className="text-center mb-0">
           <span className="text-primary font-bold text-xs uppercase tracking-[0.2em] mb-4 block">The WEBRANIX Edge</span>
           <h2 className="text-[36px] leading-[1.2] tracking-[-0.03em] font-[700] text-slate-900 mb-6">
-            Engineered for <span className="text-primary">Excellence</span>
+            Why Choose <span className="text-primary">Us</span>
           </h2>
           <p className="text-[18px] leading-[1.6] tracking-[-0.01em] font-[400] text-secondary max-w-2xl mx-auto">
             We combine architectural technicality with strategic design to build products that don't just exist—they dominate.

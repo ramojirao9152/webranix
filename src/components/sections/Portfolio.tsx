@@ -7,11 +7,18 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const projects = [
+    {
+    category: "Home Decor",
+    title: "WheelCrafts",
+    description: "Explore exquisite handcrafted bullock carts and vintage-inspired teapoy tables, blending tradition with elegance.",
+    image: "https://cdn.shopify.com/s/files/1/0591/1176/8115/files/teak-wood-bullock-cart-home-decor-wheel-crafts_1.jpg?v=1777112107",
+    liveUrl: "https://wheelcrafts.in/"
+  },
   {
     category: "Design Agency",
     title: "Pixel Shade",
     description: "A high-end creative studio specializing in cinematic visual storytelling.",
-    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1200&h=800",
+    image: "/images/pixel_shade.png",
     liveUrl: "https://pixel-shade-six.vercel.app/"
   },
   {
@@ -28,13 +35,7 @@ const projects = [
     image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=1200&h=800",
     liveUrl: "https://srih-skin-clinic.vercel.app/"
   },
-  {
-    category: "Software Engineering",
-    title: "Ramoji Rao",
-    description: "A sleek, technical portfolio showcasing professional engineering expertise.",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1200&h=800",
-    liveUrl: "https://ramojirao.in/"
-  }
+
 ];
 
 export default function Portfolio() {

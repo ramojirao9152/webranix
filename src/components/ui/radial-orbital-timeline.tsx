@@ -24,6 +24,7 @@ interface RadialOrbitalTimelineProps {
 export default function RadialOrbitalTimeline({
   timelineData,
 }: RadialOrbitalTimelineProps) {
+  const [isMounted, setIsMounted] = useState(false);
   const [expandedItems, setExpandedItems] = useState<Record<number, boolean>>(
     {}
   );
@@ -151,6 +152,14 @@ export default function RadialOrbitalTimeline({
         return "text-slate-900 bg-slate-100 border-slate-200";
     }
   };
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return <div className="w-full h-[600px] flex items-center justify-center bg-transparent"></div>;
+  }
 
   return (
     <div

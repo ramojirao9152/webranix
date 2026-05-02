@@ -133,7 +133,7 @@ export default function Hero() {
             WEBRANIX transforms high-growth brands through elite technical engineering and cinematic design. We don't just build websites; we build momentum.
           </motion.p>
           
-          <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-x-8 gap-y-4 pt-2">
+          {/* <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-x-8 gap-y-4 pt-2">
             <div>
               <Counter from={0} to={120} suffix="+" className="text-[18px] font-bold text-slate-900 leading-none" />
               <p className="text-[10px] font-bold text-primary uppercase tracking-[0.1em] mt-1">Deliveries</p>
@@ -153,7 +153,7 @@ export default function Hero() {
               <div className="text-[18px] font-bold text-slate-900 leading-none">$2B+</div>
               <p className="text-[10px] font-bold text-primary uppercase tracking-[0.1em] mt-1">Valuation</p>
             </div>
-          </motion.div>
+          </motion.div> */}
 
           <motion.div variants={itemVariants} className="flex flex-wrap gap-4 pt-4">
             <Link href="/portfolio">

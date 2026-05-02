@@ -9,7 +9,7 @@ export default function Footer() {
 
         <div className="space-y-6 max-w-sm">
           <div className="flex items-center gap-3">
-            <Image src="/images/webranix_logo.webp" alt="WEBRANIX Logo" width={40} height={40} className="object-cover rounded-full" />
+            <Image src="/images/webranix_logo.jpeg" alt="WEBRANIX Logo" width={40} height={40} className="object-cover rounded-full" />
             <span className="text-lg font-bold text-slate-900 uppercase tracking-widest">WEBRANIX</span>
           </div>
           <p className="text-[16px] leading-[1.6] font-[400] text-slate-500">
