@@ -37,7 +37,7 @@ export default function Navbar() {
     >
       <div className="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto">
         <Link href="/" className="flex items-center gap-3">
-          <Image src="/images/webranix_logo.jpeg" alt="WEBRANIX Logo" width={40} height={40} className="object-cover rounded-full" />
+          <Image src="/images/webranix_logo.png" alt="WEBRANIX Logo" width={40} height={40} className="object-cover rounded-full" />
           <span className="text-xl font-black tracking-widest text-slate-900">WEBRANIX</span>
         </Link>
 

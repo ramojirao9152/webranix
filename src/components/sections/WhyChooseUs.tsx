@@ -96,7 +96,7 @@ export default function WhyChooseUs() {
 
   return (
     <section ref={sectionRef} className="py-12 bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8">
         <div ref={headerRef} className="text-center mb-0">
           <span className="text-primary font-bold text-xs uppercase tracking-[0.2em] mb-4 block">The WEBRANIX Edge</span>
           <h2 className="text-[36px] leading-[1.2] tracking-[-0.03em] font-[700] text-slate-900 mb-6">
@@ -107,7 +107,7 @@ export default function WhyChooseUs() {
           </p>
         </div>
         
-        <div className="relative -mt-10">
+        <div className="relative mt-0 sm:-mt-10">
           <RadialOrbitalTimeline timelineData={features} />
         </div>
       </div>

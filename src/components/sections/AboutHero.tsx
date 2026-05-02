@@ -93,9 +93,9 @@ export default function AboutHero() {
               className="aspect-square bg-slate-100 rounded-[60px] overflow-hidden shadow-2xl relative group"
             >
               <img 
-                src="/images/about-main.jpg" 
+                src="/images/logo.jpeg" 
                 alt="WEBRANIX Digital Foundry" 
-                className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
+                className="w-full h-full transition-all duration-700"
               />
               <div className="absolute inset-0 bg-primary/20 mix-blend-overlay opacity-0 group-hover:opacity-100 transition-opacity" />
             </div>

@@ -12,6 +12,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "WEBRANIX Digital Agency",
   description: "Engineering Momentum for the Digital Age.",
+  icons: {
+    icon: "/images/webranix_logo.png",
+  },
 };
 
 export default function RootLayout({
