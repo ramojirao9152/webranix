@@ -187,8 +187,8 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 1.2, ease: "easeOut" }}
             className="absolute -bottom-6 -left-6 glass-card p-6 rounded-xl shadow-lg border-white/40 max-w-[200px]"
           >
-            <div className="text-primary text-[32px] leading-[1.3] tracking-[-0.02em] font-[700]">142%</div>
-            <p className="text-[14px] leading-[1.2] tracking-[0.05em] font-[700] text-secondary mt-1">AVERAGE GROWTH FOR OUR PARTNERS</p>
+            <div className="text-primary text-[32px] leading-[1.3] tracking-[-0.02em] font-[700]">100%</div>
+            <p className="text-[14px] leading-[1.2] tracking-[0.05em] font-[700] text-secondary mt-1">Commitment To Quality</p>
           </motion.div>
         </motion.div>
 

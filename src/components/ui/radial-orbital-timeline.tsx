@@ -181,7 +181,7 @@ export default function RadialOrbitalTimeline({
 
   return (
     <div
-      className="w-full h-[480px] sm:h-[550px] md:h-[650px] flex flex-col items-center justify-center bg-transparent overflow-hidden"
+      className="w-full h-[580px] sm:h-[550px] md:h-[650px] flex flex-col items-center justify-center bg-transparent overflow-hidden"
       ref={containerRef}
       onClick={handleContainerClick}
     >
@@ -195,13 +195,13 @@ export default function RadialOrbitalTimeline({
           }}
         >
           {/* Central Hub */}
-          <div className="absolute w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-to-br from-primary via-primary/80 to-slate-900 animate-pulse flex items-center justify-center z-10">
+          <div className="absolute w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-primary via-primary/80 to-slate-900 animate-pulse flex items-center justify-center z-10">
             <div className="absolute w-24 h-24 sm:w-32 sm:h-32 rounded-full border border-primary/20 animate-ping opacity-70"></div>
             <div
-              className="absolute w-28 h-28 sm:w-40 sm:h-40 rounded-full border border-primary/10 animate-ping opacity-50"
+              className="absolute w-24 h-24 sm:w-28 sm:h-28 rounded-full border border-primary/10 animate-ping opacity-50"
               style={{ animationDelay: "0.5s" }}
             ></div>
-            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/80 backdrop-blur-md"></div>
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/80 backdrop-blur-md"></div>
           </div>
 
           <div 
@@ -248,7 +248,7 @@ export default function RadialOrbitalTimeline({
 
                 <div
                   className={`
-                  w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center
+                  w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center
                   ${
                     isExpanded
                       ? "bg-primary text-white"
@@ -265,26 +265,26 @@ export default function RadialOrbitalTimeline({
                       : "border-slate-200"
                   }
                   transition-all duration-300 transform
-                  ${isExpanded ? "scale-150" : ""}
+                  ${isExpanded ? "scale-105" : ""}
                 `}
                 >
-                  <Icon size={20} />
+                  <Icon size={16} className="sm:size-5" />
                 </div>
 
                 <div
                   className={`
-                  absolute top-14 sm:top-16 left-1/2 -translate-x-1/2 
-                  text-[11px] sm:text-sm font-bold tracking-wider text-center
-                  w-24 sm:w-auto leading-tight
+                  absolute top-12 sm:top-14 left-1/2 -translate-x-1/2 
+                  text-[10px] sm:text-xs font-bold tracking-wider text-center
+                  w-20 sm:w-auto leading-tight
                   transition-all duration-300
-                  ${isExpanded ? "text-primary scale-110 sm:scale-125" : "text-slate-500"}
+                  ${isExpanded ? "text-primary font-extrabold" : "text-slate-500"}
                 `}
                 >
                   {item.title}
                 </div>
 
                 {isExpanded && (
-                  <Card className="absolute top-20 sm:top-24 left-1/2 -translate-x-1/2 w-[240px] sm:w-72 bg-white/95 backdrop-blur-lg border-primary/20 shadow-xl shadow-primary/5 overflow-visible z-[300]">
+                  <Card className="absolute top-28 sm:top-24 left-1/2 -translate-x-1/2 w-[280px] sm:w-72 bg-white/95 backdrop-blur-lg border-primary/20 shadow-xl shadow-primary/5 overflow-visible z-[300]">
                     <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-px h-3 bg-primary/30"></div>
                     <CardHeader className="pb-2">
                       <div className="flex justify-between items-center">
@@ -307,7 +307,7 @@ export default function RadialOrbitalTimeline({
                         {item.title}
                       </CardTitle>
                     </CardHeader>
-                    <CardContent className="text-xs text-slate-600">
+                    <CardContent className="text-xs text-slate-600 max-h-[280px] sm:max-h-none overflow-y-auto custom-scrollbar">
                       <p>{item.content}</p>
 
                       <div className="mt-4 pt-3 border-t border-slate-100">

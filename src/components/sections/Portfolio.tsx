@@ -11,29 +11,29 @@ const projects = [
     category: "Home Decor",
     title: "WheelCrafts",
     description: "Explore exquisite handcrafted bullock carts and vintage-inspired teapoy tables, blending tradition with elegance.",
-    image: "https://cdn.shopify.com/s/files/1/0591/1176/8115/files/teak-wood-bullock-cart-home-decor-wheel-crafts_1.jpg?v=1777112107",
+    image: "/images/wheelcrafts.png",
     liveUrl: "https://wheelcrafts.in/"
   },
   {
     category: "Design Agency",
     title: "Pixel Shade",
     description: "A high-end creative studio specializing in cinematic visual storytelling.",
-    image: "/images/pixel_shade.png",
+    image: "/images/pixel_shade copy.png",
     liveUrl: "https://pixel-shade-six.vercel.app/"
   },
   {
     category: "Healthcare",
     title: "Shreya Dental",
     description: "Professional dental healthcare platform blending clinical precision with patient comfort.",
-    image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=1200&h=800",
+    image: "/images/shreya_dental.png",
     liveUrl: "https://shreya-dental.vercel.app/"
   },
   {
-    category: "Dermatology",
-    title: "Srih Skin Clinic",
-    description: "Advanced aesthetic dermatology center featuring cutting-edge laser treatments.",
-    image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=1200&h=800",
-    liveUrl: "https://srih-skin-clinic.vercel.app/"
+    category: "Digital Marketing",
+    title: "True Brands",
+    description: "A premier digital agency specializing in scaling brands through data-driven SEO, performance marketing, and high-impact web design.",
+    image: "/images/true_brands.png",
+    liveUrl: "https://www.truebrands.in/"
   },
 
 ];
@@ -104,16 +104,16 @@ export default function Portfolio() {
   };
 
   return (
-    <section className="py-12 bg-white" ref={containerRef}>
+    <section className="py-12 md:py-24 bg-white" ref={containerRef}>
       <div className="max-w-7xl mx-auto px-8">
         
-        <div className="flex flex-col md:flex-row justify-between items-end gap-6 mb-12">
+        <div className="flex flex-col md:flex-row justify-between items-end gap-4 md:gap-6 mb-8 md:mb-12">
           <div className="max-w-2xl">
             <span className="text-primary font-bold text-xs uppercase tracking-[0.2em] mb-4 block">The Proof</span>
-            <h2 className="text-[36px] leading-[1.2] tracking-[-0.03em] font-[700] text-slate-900 mb-6">
+            <h2 className="text-[28px] md:text-[36px] leading-[1.2] tracking-[-0.03em] font-[700] text-slate-900 mb-4 md:mb-6">
               The Performance <span className="text-primary">Gallery</span>
             </h2>
-            <p className="text-[18px] leading-[1.6] tracking-[-0.01em] font-[400] text-secondary">
+            <p className="text-[16px] md:text-[18px] leading-[1.6] tracking-[-0.01em] font-[400] text-secondary">
               Explore how we've helped industry disruptors achieve exponential growth through strategic design and elite technical performance.
             </p>
           </div>

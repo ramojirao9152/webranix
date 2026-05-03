@@ -8,7 +8,7 @@ import { Users, Globe } from "lucide-react";
 const team = [
   {
     name: "Our Founder",
-    role: "Founder & Strategic Lead",
+    role: "",
     image: "/images/webranix_founder.jpeg",
     bio: "Driving the strategic vision of WEBRANIX, bridging the gap between technical mastery and artistic excellence to deliver category-defining digital products."
   }

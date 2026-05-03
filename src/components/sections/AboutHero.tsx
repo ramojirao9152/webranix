@@ -61,28 +61,28 @@ export default function AboutHero() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-12 bg-white overflow-hidden">
+    <section ref={sectionRef} className="py-12 md:py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-8 relative">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
           <div ref={leftContentRef}>
-            <h1 className="text-[52px] leading-[1.1] tracking-[-0.04em] font-[900] text-slate-900 mb-8">
+            <h1 className="text-[40px] md:text-[52px] leading-[1.1] tracking-[-0.04em] font-[900] text-slate-900 mb-8">
               Engineering the Future of <span className="text-primary">Digital Agency</span>
             </h1>
-            <p className="text-[18px] leading-[1.6] tracking-[-0.01em] font-[400] text-secondary mb-10">
+            <p className="text-[16px] md:text-[18px] leading-[1.6] tracking-[-0.01em] font-[400] text-secondary mb-10">
               WEBRANIX started with a simple mission: to bridge the gap between high-end digital craftsmanship and market accessibility. We believe that premium digital experiences shouldn't be reserved for the fortune 500.
             </p>
-            <div className="flex gap-12">
+            <div className="flex flex-wrap gap-6 sm:gap-12">
               <div>
-                <span className="block text-4xl font-bold text-slate-900 mb-1">50+</span>
-                <span className="text-sm font-bold text-slate-400 uppercase tracking-widest">Projects</span>
+                <span className="block text-3xl md:text-4xl font-bold text-slate-900 mb-1">7</span>
+                <span className="text-[10px] md:text-xs font-bold text-slate-400 uppercase tracking-widest">Days Delivery</span>
               </div>
               <div>
-                <span className="block text-4xl font-bold text-slate-900 mb-1">12</span>
-                <span className="text-sm font-bold text-slate-400 uppercase tracking-widest">Experts</span>
+                <span className="block text-3xl md:text-4xl font-bold text-slate-900 mb-1">24/7</span>
+                <span className="text-[10px] md:text-xs font-bold text-slate-400 uppercase tracking-widest">Support</span>
               </div>
               <div>
-                <span className="block text-4xl font-bold text-slate-900 mb-1">99%</span>
-                <span className="text-sm font-bold text-slate-400 uppercase tracking-widest">Success Rate</span>
+                <span className="block text-3xl md:text-4xl font-bold text-slate-900 mb-1">100%</span>
+                <span className="text-[10px] md:text-xs font-bold text-slate-400 uppercase tracking-widest">Commitment</span>
               </div>
             </div>
           </div>

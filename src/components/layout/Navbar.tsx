@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu } from "lucide-react";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const { scrollY } = useScroll();
@@ -25,6 +26,9 @@ export default function Navbar() {
   );
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (path: string) => pathname === path;
 
   const phoneNumber = "+919550073982";
   const message = "Hi WEBRANIX! I'd like to start a project.";
@@ -42,10 +46,30 @@ export default function Navbar() {
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
-          <Link href="/" className="font-medium text-sm text-slate-600 hover:text-primary transition-colors">Home</Link>
-          <Link href="/services" className="font-medium text-sm text-slate-600 hover:text-primary transition-colors">Services</Link>
-          <Link href="/portfolio" className="font-medium text-sm text-slate-600 hover:text-primary transition-colors">Portfolio</Link>
-          <Link href="/about" className="font-medium text-sm text-slate-600 hover:text-primary transition-colors">About</Link>
+          <Link 
+            href="/" 
+            className={`font-medium text-sm transition-colors ${isActive("/") ? "text-primary font-bold" : "text-slate-600 hover:text-primary"}`}
+          >
+            Home
+          </Link>
+          <Link 
+            href="/services" 
+            className={`font-medium text-sm transition-colors ${isActive("/services") ? "text-primary font-bold" : "text-slate-600 hover:text-primary"}`}
+          >
+            Services
+          </Link>
+          <Link 
+            href="/portfolio" 
+            className={`font-medium text-sm transition-colors ${isActive("/portfolio") ? "text-primary font-bold" : "text-slate-600 hover:text-primary"}`}
+          >
+            Portfolio
+          </Link>
+          <Link 
+            href="/about" 
+            className={`font-medium text-sm transition-colors ${isActive("/about") ? "text-primary font-bold" : "text-slate-600 hover:text-primary"}`}
+          >
+            About
+          </Link>
         </div>
 
         <div className="flex items-center gap-4">
@@ -75,10 +99,34 @@ export default function Navbar() {
           animate={{ opacity: 1, y: 0 }}
           className="md:hidden absolute top-20 left-0 w-full bg-white shadow-lg p-6 flex flex-col gap-4"
         >
-          <Link href="/" className="font-medium text-slate-600">Home</Link>
-          <Link href="/services" className="font-medium text-slate-600">Services</Link>
-          <Link href="/portfolio" className="font-medium text-slate-600">Portfolio</Link>
-          <Link href="/about" className="font-medium text-slate-600">About</Link>
+          <Link 
+            href="/" 
+            className={`font-medium transition-colors ${isActive("/") ? "text-primary font-bold" : "text-slate-600"}`}
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Home
+          </Link>
+          <Link 
+            href="/services" 
+            className={`font-medium transition-colors ${isActive("/services") ? "text-primary font-bold" : "text-slate-600"}`}
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Services
+          </Link>
+          <Link 
+            href="/portfolio" 
+            className={`font-medium transition-colors ${isActive("/portfolio") ? "text-primary font-bold" : "text-slate-600"}`}
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Portfolio
+          </Link>
+          <Link 
+            href="/about" 
+            className={`font-medium transition-colors ${isActive("/about") ? "text-primary font-bold" : "text-slate-600"}`}
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            About
+          </Link>
           <Link href={whatsappUrl} target="_blank" rel="noopener noreferrer">
             <button className="bg-primary text-white px-6 py-3 rounded-full font-button mt-4 w-full">
               Start a Project
