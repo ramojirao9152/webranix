@@ -80,22 +80,22 @@ export default function FullPortfolio() {
               </div>
               <div className="space-y-2 md:space-y-3">
                 <div>
-                  <span className="text-[9px] md:text-[10px] font-bold text-primary uppercase tracking-widest block mb-1">{project.category}</span>
-                  <h3 className="text-base md:text-lg font-bold text-slate-900 leading-tight">{project.title}</h3>
-                  <p className="text-slate-500 text-[10px] md:text-xs mt-2 line-clamp-2">{project.description}</p>
+                  <span className="text-[10px] md:text-xs font-bold text-primary uppercase tracking-widest block mb-1">{project.category}</span>
+                  <h3 className="text-lg md:text-xl font-bold text-slate-900 leading-tight">{project.title}</h3>
+                  <p className="text-slate-500 text-xs md:text-sm mt-2 line-clamp-2">{project.description}</p>
                 </div>
                 <div className="flex items-center justify-between pt-2">
                   <a 
                     href={project.liveUrl} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="bg-primary text-white text-[10px] md:text-[11px] font-bold px-3 md:px-4 py-2 rounded-lg hover:opacity-90 transition-opacity flex items-center gap-2"
+                    className="bg-primary text-white text-[11px] md:text-xs font-bold px-4 md:px-5 py-2 md:py-2.5 rounded-lg hover:opacity-90 transition-opacity flex items-center gap-2"
                   >
-                    Live Site <ExternalLink size={10} />
+                    Live Site <ExternalLink size={12} className="w-3 h-3 md:w-4 md:h-4" />
                   </a>
                   <button 
                     onClick={() => setSelectedProject(project)}
-                    className="text-primary text-[10px] md:text-[11px] font-bold hover:underline"
+                    className="text-primary text-[11px] md:text-xs font-bold hover:underline"
                   >
                     Know More →
                   </button>
