@@ -1,12 +1,14 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Send, Mail, MapPin, Phone } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "loading">("idle");
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [selectedProjectType, setSelectedProjectType] = useState("");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -104,15 +106,58 @@ export default function ContactForm() {
                 </div>
               </div>
 
-              <div className="space-y-2">
+              <div className="space-y-2 relative" id="project-type-dropdown">
                 <label className="text-sm font-bold text-slate-700">Project Type</label>
-                <select name="project_type" defaultValue="" className="w-full px-4 md:px-6 py-3 md:py-4 rounded-xl md:rounded-2xl border border-slate-200 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all bg-white text-slate-700 font-medium cursor-pointer shadow-sm hover:border-slate-300">
-                  <option value="" disabled>Select Project Type</option>
-                  <option>Web Development</option>
-                  <option>Mobile App</option>
-                  <option>UI/UX Design</option>
-                  <option>Digital Marketing</option>
-                </select>
+                <div 
+                  onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                  className="w-full px-4 md:px-6 py-3 md:py-4 rounded-xl md:rounded-2xl border border-slate-200 bg-white text-slate-700 font-medium cursor-pointer shadow-sm hover:border-slate-300 flex items-center justify-between transition-all"
+                >
+                  <span className={selectedProjectType ? "text-slate-900" : "text-slate-400"}>
+                    {selectedProjectType || "Select Project Type"}
+                  </span>
+                  <motion.div
+                    animate={{ rotate: isDropdownOpen ? 180 : 0 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L6 6L11 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                    </svg>
+                  </motion.div>
+                </div>
+                
+                {/* Hidden input for form submission */}
+                <input type="hidden" name="project_type" value={selectedProjectType} required />
+
+                <AnimatePresence>
+                  {isDropdownOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                      animate={{ opacity: 1, y: 0, scale: 1 }}
+                      exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                      className="absolute top-full left-0 w-full mt-2 bg-white border border-slate-100 rounded-2xl shadow-2xl z-50 overflow-y-auto max-h-48 custom-scrollbar py-2"
+                    >
+                      {[
+                        "Web Development",
+                        "Mobile App",
+                        "Wedding Website",
+                        "UI/UX Design",
+                        "Digital Marketing",
+                        "Others"
+                      ].map((option) => (
+                        <div
+                          key={option}
+                          onClick={() => {
+                            setSelectedProjectType(option);
+                            setIsDropdownOpen(false);
+                          }}
+                          className="px-6 py-3 hover:bg-slate-50 cursor-pointer text-slate-700 hover:text-primary font-medium transition-colors"
+                        >
+                          {option}
+                        </div>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
 
               <div className="space-y-2">
